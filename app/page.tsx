@@ -18,7 +18,7 @@ interface SearchParams {
     q?: string;
 }
 
-const Page = async ({ searchParams: { q = '' } }: { searchParams: SearchParams }) => {
+const Page = async ({ searchParams: { q = 'Delhi' } }: { searchParams: SearchParams }) => {
     // if (!q) return <p>Please Search for City</p>;
 
     const city = await fetchGeo(q);
